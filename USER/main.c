@@ -15,16 +15,6 @@
 #include "dht11.h"
 
 
-/************************************************
- ALIENTEK STM32F103开发板 扩展实验5
- ATK-RM04 WIFI模块测试实验 
- 技术支持：www.openedv.com
- 淘宝店铺：http://eboard.taobao.com 
- 关注微信公众平台微信号："正点原子"，免费获取STM32资料。
- 广州市星翼电子科技有限公司  
- 作者：正点原子 @ALIENTEK
-************************************************/
-
 
  int main(void)
  {	 
@@ -42,8 +32,6 @@
  	LED_Init();		  			//初始化与LED连接的硬件接口
 	KEY_Init();					//初始化按键
 	LCD_Init();			   		//初始化LCD   
-	//W25QXX_Init();				//初始化W25Q128
-//	tp_dev.init();				//初始化触摸屏
 	usart3_init(115200);		//初始化串口3 
 	key=KEY_Scan(0);  
  	while(DHT11_Init())	//DHT11初始化	

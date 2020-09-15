@@ -9,6 +9,7 @@
 //用于测试TCP/UDP连接
 //返回值:0,正常
 //    其他,错误代码
+//wifi
 
 u8 temperature=0; //温度 	    
 u8 humidity=0;    //湿度
